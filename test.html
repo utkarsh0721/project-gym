@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Phoenix Gym</title>
+    <link rel="icon" type="image/png" href="phoenix.png">
+    <link rel="shortcut icon" href="Screenshot 2025-01-08 124050.png" type="image/x-icon">
+    <link rel="stylesheet" href="3-test.css">
+    <style>
+        
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+}
+.navbar img {
+    width: 150px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    text-decoration: none;
+    color: rgb(23, 106, 189);
+    padding: 0.8rem;
+    border-radius: 30px;
+    border: 2px solid aqua;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color:blue;
+    border: none;
+    border-bottom: 5px solid  aqua;
+
+}
+.franchise-button {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.testimonials {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: white;
+    color: #333;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ef7756;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.reviewer-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 5px solid #a5a3a3;
+}
+
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(145deg, #ef7756, #ff9966);
+    color: white;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-card:hover h3 {
+    color: white;
+}
+
+
+footer {
+    background-color: #002b36;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ef7756;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+.add-testimonial, 
+.add-testimonial input, 
+.add-testimonial textarea, 
+.add-testimonial button {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1em;
+}
+
+.add-testimonial {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.add-testimonial h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif; 
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.review-added {
+    text-align: center;
+    color: green;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        width: auto;
+        margin: 20px auto;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <img src="https://www.phoenixgym.in/wp-content/uploads/2023/08/logo.png" alt="Phoenix Gym">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About us</a></li>
+            <li><a href="index.html">Services <i class="fas fa-caret-down"></i></a></li>
+            <li><a href="equipments.html">Equipments</a></li>
+            <li><a href="test.html">Testimonials</a></li>
+            <li><a href="membership.html">Memberships</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="franchise.html" class="franchise-button">Become a Franchise</a></li>
+        </ul>
+    </div>
+    <section class="testimonials">
+        <h2 class="section-title">What Our Members Say</h2>
+        <div class="testimonial-grid" id="testimonial-grid">
+            <div class="testimonial-card">
+                <img src="https://media.istockphoto.com/photos/portrait-of-a-beautifull-smiling-man-picture-id500060262?k=6&m=500060262&s=612x612&w=0&h=dqPFs-C5bejj3tCI_pZFctS5xOHUtipA1FHPUU6aAwU="alt="Aarav Kumar" class="reviewer-img">
+                <p>"Phoenix Gym is simply the best! The trainers are so supportive, and the equipment is top-notch."</p>
+                <h3>- Aarav Kumar</h3>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://c.stocksy.com/a/9iL500/z9/1275101.jpg" alt="Priya Sharma" class="reviewer-img">
+                <p>"I have achieved my fitness goals thanks to the personalized training programs."</p>
+                <h3>- Priya Sharma</h3>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://www.keste.com/wp-content/uploads/2021/07/AdobeStock_277727769-1-scaled.jpeg" alt="Rohan Singh" class="reviewer-img">
+                <p>"A fantastic gym environment that motivates me to work out every day!"</p>
+                <h3>- Rohan Singh</h3>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://cdn.britannica.com/28/156628-050-8BFE381B/girl-Naga-Arunachal-Pradesh-India.jpg"
+                    alt="Neha Patel" class="reviewer-img">
+                <p>"Phoenix Gym has changed my life! I feel stronger and more confident."</p>
+                <h3>- Neha Patel</h3>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://www.shutterstock.com/image-photo/portrait-south-indian-people-celebrating-260nw-2238731695.jpg" alt="Deepika Verma" class="reviewer-img">
+                <p>"The group classes are so much fun and effective. Highly recommended!"</p>
+                <h3>- Deepika Verma</h3>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://as1.ftcdn.net/v2/jpg/02/60/28/22/1000_F_260282262_8pYvjq98FTz7MscAGPXpWPvm7VGgz9yx.jpg" alt="Rajesh Gupta" class="reviewer-img">
+                <p>"A gym with a great community and excellent facilities. Love it!"</p>
+                <h3>- Rajesh Gupta</h3>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://i.dailymail.co.uk/i/pix/2016/03/08/11/31F73EAA00000578-3481852-image-a-57_1457437700569.jpg" alt="Ayesha Khan" class="reviewer-img">
+                <p>"I enjoy every session here. The staff is friendly and always ready to help."</p>
+                <h3>- Ayesha Khan</h3>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://c.stocksy.com/a/dTW500/z9/1316485.jpg" alt="Vikram Rao" class="reviewer-img">
+                <p>"The gym's atmosphere is so energetic, and the trainers are super motivating."</p>
+                <h3>- Vikram Rao</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="add-testimonial">
+        <h2>Share Your Experience</h2>
+        <form id="review-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="reviewer-name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="review">Your Review</label>
+                <textarea id="review-text" name="review" rows="5" placeholder="Enter your review" required></textarea>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+        <p class="review-added" id="review-added" style="display: none;">Thank you for your review!</p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Phoenix Gym. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+        document.getElementById('review-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+
+            const name = document.getElementById('reviewer-name').value;
+            const review = document.getElementById('review-text').value;
+
+
+            if (name && review) {
+
+                const newCard = document.createElement('div');
+                newCard.classList.add('testimonial-card');
+                newCard.innerHTML = ` 
+                    <p>"${review}"</p>
+                    <h3>- ${name}</h3>
+                `;
+
+                document.getElementById('testimonial-grid').appendChild(newCard);
+
+                document.getElementById('review-form').reset();
+
+
+                const message = document.getElementById('review-added');
+                message.style.display = 'block';
+                setTimeout(() => {
+                    message.style.display = 'none';
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+
+</html>
+

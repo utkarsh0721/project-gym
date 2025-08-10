@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Screenshot 2025-01-08 124050.png" type="image/x-icon">
+    <title>Phoenix Equipments</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            background-color: whitesmoke;
+        }
+        body{
+            /* border: 2px solid green; */
+            height: 100vh;
+            width: 100vw;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: whitesmoke;
+            padding: 10px 20px;
+        }
+        .navbar img {
+            width: 150px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: rgb(23, 106, 189);
+            padding: 0.8rem;
+            border-radius: 30px;
+            border: 2px solid aqua;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color:blue;
+            border: none;
+            border-bottom: 5px solid  aqua;
+
+        }
+        .franchise-button {
+            background-color: #ff6347;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .div{
+           
+            display: flex;
+            width: 100vw;
+            padding: 2rem;
+            height: 120vh;
+
+        }
+        .left{
+            /* border: 2px solid red; */
+            width: 50%;
+            
+        }
+        
+        .main-scroll-div{
+            width: 100%;
+            /* height: 100%; */
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding: 1rem;
+        }
+        .cover::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 100px;
+            background-image: linear-gradient(90deg ,white,transparent);
+        }
+        .cover::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index:1;
+            height: 100%;
+            width: 100px;
+            background-image: linear-gradient(-90deg ,white,transparent);
+        }
+        .cover{
+            position: relative;
+            /* border: 4px dashed black; */
+            width: 90%;
+            height: 38%;
+
+        }
+        .scroll-images{
+            width: 100%;
+            height: auto;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             overflow: auto; 
+            scroll-behavior: smooth;
+        }
+        .child{
+            min-width: 500px;
+            height: 500px;
+            margin: 1px 5px;
+            cursor: pointer;
+            /* border: 2px solid pink; */
+            overflow: hidden;
+
+        }
+        .child img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .right
+        {
+            /* border: 2px solid blue; */
+            width: 50%;
+            font-family: 'inter',sans-serif;
+            font-family: cursive;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+        pre{
+            font-size: 15px;
+            font-weight: 400;
+            float: left;
+        }
+        .right h1{
+            font-size: 48px;
+            color: orangered;
+            font-weight: bolder;
+        }
+        .right p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .right h2{
+            text-align: start;
+        }
+         .right ul li i{
+            /* border: #ff6347 2px solid; */
+            padding: 0.7rem;
+            color: #ff6347;
+        }
+        .right ul li{
+            list-style: none;
+            text-align: start;
+            line-height: 50px;
+        }
+        .right input{
+             background-color: rgb(231, 88, 11);
+             padding: 0.7rem;
+             width: 20%;
+             color: black;
+             border-radius: 15px;
+        }
+        .right input:hover{
+            color: blue;
+            background-color: bisque;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body><div class="navbar">
+    <img src="https://www.phoenixgym.in/wp-content/uploads/2023/08/logo.png" alt="Phoenix Gym">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About us</a></li>
+        <li><a href="index.html">Services <i class="fas fa-caret-down"></i></a></li>
+        <li><a href="equipments.html">Equipments</a></li>
+        <li><a href="test.html">Testimonials</a></li>
+        <li><a href="membership.html">Memberships</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="franchise.html" class="franchise-button">Become a Franchise</a></li>
+    </ul>
+</div>
+    <div class="div">
+        <!--Left div-->
+        <div class="left">
+            <div class="main-scroll-div">
+                <div> </div>
+                <div class="cover">
+                    <div class="scroll-images">
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-1-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-2-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-3-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-4-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-5-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-1-jpg.webp" alt=""></div>
+                        <!-- <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-1-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-1-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-1-jpg.webp" alt=""></div> -->
+                      
+                        
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <!--right div-->
+<div class="right">
+<pre>Freeweight One 1FO036    Plate Loaded</pre>
+<h1>VERTICAL CHEST PRESS</h1>
+<hr>
+<p>The Vertical Chest Press has a trajectory of movement that makes it ideal for training the central portion of the pectoralis major.</p>
+
+<h2>Main Features</h2>
+<ul><li><i class="fa-solid fa-circle-check"></i>Gas-assisted height-adjustable seat</li>
+<li><i class="fa-solid fa-circle-check"></i>Gas-assisted depth adjustable backrest</li>
+<li><i class="fa-solid fa-circle-check"></i>Independent levers for mono or bilateral execution</li>
+<li><i class="fa-solid fa-circle-check"></i>Physiological load curve with lever system</li>
+<li><i class="fa-solid fa-circle-check"></i>Multigrip handles for a prone or neutral grip</li></ul>
+<input type="button" value="CONTACT US">
+</div>
+</div>
+</body>
+</html>

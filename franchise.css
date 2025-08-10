@@ -1,0 +1,179 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+}
+.navbar img {
+    width: 150px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    text-decoration: none;
+    color: rgb(23, 106, 189);
+    padding: 0.8rem;
+    border-radius: 30px;
+    border: 2px solid aqua;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color:blue;
+    border: none;
+    border-bottom: 5px solid  aqua;
+
+}
+.franchise-button {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Fade-Out Transition for Page */
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+header {
+    background-color: #ef7756;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.franchise-btn {
+    background-color: #ef7756;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.franchise-btn:hover {
+    background-color: #ff6f61;
+    transform: scale(1.05);
+}
+
+/* Parallax Effect */
+.parallax {
+    background-image: url('images/gym-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: rgb(3, 41, 84);
+    text-align: center;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.parallax ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.parallax li {
+    margin: 10px 0;
+}
+
+.franchise-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.franchise-form input,
+.franchise-form textarea {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #ef7756;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ff6f61;
+}
+
+.form-feedback {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ef7756;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .franchise-form {
+        width: 100%;
+    }
+
+    .parallax h2 {
+        font-size: 2rem;
+    }
+}

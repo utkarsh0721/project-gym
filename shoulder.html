@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            background-color: whitesmoke;
+        }
+        body{
+            /* border: 2px solid green; */
+            height: 100vh;
+            width: 100vw;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: whitesmoke;
+            padding: 10px 20px;
+        }
+        .navbar img {
+            width: 150px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: rgb(23, 106, 189);
+            padding: 0.8rem;
+            border-radius: 30px;
+            border: 2px solid aqua;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color:blue;
+            border: none;
+            border-bottom: 5px solid  aqua;
+
+        }
+        .franchise-button {
+            background-color: #ff6347;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .div{
+           
+            display: flex;
+            width: 100vw;
+            padding: 2rem;
+            height: 120vh;
+
+        }
+        .left{
+            /* border: 2px solid red; */
+            width: 50%;
+            
+        }
+        
+        .main-scroll-div{
+            width: 100%;
+            /* height: 100%; */
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding: 1rem;
+        }
+        .cover::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 100px;
+            background-image: linear-gradient(90deg ,white,transparent);
+        }
+        .cover::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index:1;
+            height: 100%;
+            width: 100px;
+            background-image: linear-gradient(-90deg ,white,transparent);
+        }
+        .cover{
+            position: relative;
+            /* border: 4px dashed black; */
+            width: 90%;
+            height: 38%;
+
+        }
+        .scroll-images{
+            width: 100%;
+            height: auto;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             overflow: auto; 
+            scroll-behavior: smooth;
+        }
+        .child{
+            min-width: 500px;
+            height: 500px;
+            margin: 1px 5px;
+            cursor: pointer;
+            /* border: 2px solid pink; */
+            overflow: hidden;
+
+        }
+        .child img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .right
+        {
+            /* border: 2px solid blue; */
+            width: 50%;
+            font-family: 'inter',sans-serif;
+            font-family: cursive;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+        pre{
+            font-size: 15px;
+            font-weight: 400;
+            float: left;
+        }
+        .right h1{
+            font-size: 48px;
+            color: orangered;
+            font-weight: bolder;
+        }
+        .right p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .right h2{
+            text-align: start;
+        }
+         .right ul li i{
+            /* border: #ff6347 2px solid; */
+            padding: 0.7rem;
+            color: #ff6347;
+        }
+        .right ul li{
+            list-style: none;
+            text-align: start;
+            line-height: 50px;
+        }
+        .right input{
+             background-color: rgb(231, 88, 11);
+             padding: 0.7rem;
+             width: 20%;
+             color: black;
+             border-radius: 15px;
+        }
+        .right input:hover{
+            color: blue;
+            background-color: bisque;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://www.phoenixgym.in/wp-content/uploads/2023/08/logo.png" alt="Phoenix Gym">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="#service">Services <i class="fas fa-caret-down"></i></a></li>
+            <li><a href="equipments.html">Equipments</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Memberships</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="franchise-button">Become a Franchise</a></li>
+        </ul>
+    </div>
+    <div class="div">
+        <!--Left div-->
+        <div class="left">
+            <div class="main-scroll-div">
+                <div> </div>
+                <div class="cover">
+                    <div class="scroll-images">
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2023/03/esercizio-66-jpg-webp.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2023/03/esercizio-66-jpg-webp.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2023/03/1hp207-jpg-webp.webp" alt=""></div> 
+                        <!-- iv class="child"><img src="https://www.panattasport.com/wp-content/uploads/2023/03/esercizio-2-132-jpg-webp.webp" alt=""></div> --> -->
+                        <!-- <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-1-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-1-jpg.webp" alt=""></div>
+                        <div class="child"><img src="https://www.panattasport.com/wp-content/uploads/2024/07/1FO036-1-jpg.webp" alt=""></div> -->
+                      
+                        
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <!--right div-->
+<div class="right">
+<pre>SEC 1SC207 BENCHES</pre>
+<h1>OLYMPIC SHOULDER BENCH PRESS</h1>
+<hr>
+<p>The Olympic Shoulder Bench has an essential design that offers a stable support to carry out the fundamental exercise of vertical thrust in total safety. The barbell racks in three positions and the rear platform for assistance by the spotter ensures a training with maximum safety.</p>
+<h2>Features</h2>
+<ul><li><i class="fa-solid fa-circle-check"></i>barbell support in 3 positions</li>
+<li><i class="fa-solid fa-circle-check"></i>height adjustable seat</li>
+<li><i class="fa-solid fa-circle-check"></i>real platforms for trainer</li>
+<!-- <li><i class="fa-solid fa-circle-check"></i>backrest adjustable in depth with gas-assisted pantograph system;</li>
+<li><i class="fa-solid fa-circle-check"></i>backrest adjustable in inclination according to the exercise to be performed;</li>
+<li><i class="fa-solid fa-circle-check"></i>height-adjustable upper roller to lock the thighs in the physiologically correct position;</li>
+<li><i class="fa-solid fa-circle-check"></i>range of motion: adjustment of the starting angle for both work configurations (quadriceps or strength); -->
+    <!-- adjustable thrust roller;</li>
+<li><i class="fa-solid fa-circle-check"></i>handle for easy start of movement;</li>
+<li><i class="fa-solid fa-circle-check"></i>counterbalance to reduce the free weight of the operating lever</li></ul> -->
+<input type="button" value="CONTACT US">
+</div>
+</div>
+</body>
+</html>
